@@ -1,6 +1,22 @@
 # kafka-experiments
 
-Results of experiments in Grafana: https://adamiaonr.grafana.net/d/5CSjVXbnk/confluent-cloud?orgId=1&from=1684668600000&to=1684677600000
+## usage
+
+1. Build:
+```
+$ make
+```
+
+2. Set cluster and producer configs in `kafka_config.ini`.
+
+3. Try it out (e.g., 10 message creators and 1 consumer/Kafka producer):
+```
+$ producer 10 1
+```
+
+## some results
+
+results of experiments in Grafana: https://adamiaonr.grafana.net/d/5CSjVXbnk/confluent-cloud?orgId=1&from=1684668600000&to=1684677600000
 
 | # | start time | # messages | # producers | # consumers | linger.ms | batch.size | compression.type | errors |
 |---|---|---|---|---|---|---|---|---|
