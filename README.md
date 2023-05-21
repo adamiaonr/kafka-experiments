@@ -11,7 +11,7 @@ $ make
 
 3. Try it out (e.g., 10 message creators and 1 consumer/Kafka producer):
 ```
-$ producer 10 1
+$ ./producer 10 1
 ```
 
 ## some results
